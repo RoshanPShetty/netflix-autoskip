@@ -23,10 +23,11 @@ const Footer = () => {
 				</a>
 			</div>
 
-			<div className="flex mt-16 md:flex-row flex-col justify-between items-center">
+			<div className="flex mt-16 md:flex-row flex-col justify-between items-end">
 				<p className="md:text-base text-sm md:font-normal font-light">
 					Copyright © 2024 Roshan Praveen Shetty
 				</p>
+				<a href="/privacy-policy" className="text-white-200" target="_blank">Privacy and Policy</a>
 				<div className="flex items-center md:gap-3 gap-6 mt-5">
 					{socialMedia.map((profile) => (
 						<a href={profile.link} key={profile.id}>
