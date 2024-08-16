@@ -24,7 +24,8 @@ const Footer = () => {
 			</div>
 
 			<div className="flex mt-16 md:flex-row flex-col justify-between items-end">
-				<p className="md:text-base text-sm md:font-normal font-light">
+				<p className="md:text-base text-sm md:font-normal font-light flex items-end">
+				<img src="/logo.png" alt="" className="mr-4 h-8" />
 					Copyright © 2024 Roshan Praveen Shetty
 				</p>
 				<a href="/privacy-policy" className="text-white-200" target="_blank">Privacy and Policy</a>
