@@ -41,7 +41,7 @@ export function FeaturesSectionDemo() {
 		},
 	];
 	return (
-		<div className="relative z-20 lg:py-40 max-w-7xl mx-auto">
+		<div className="relative z-20 lg:py-40 max-w-7xl mx-auto" id="features">
 			<div className="px-8">
 				<h1 className="text-4xl lg:text-5xl lg:leading-tight max-w-5xl mx-auto text-center tracking-tight font-semibold text-black dark:text-white">
 					Unleash the Power of{" "}

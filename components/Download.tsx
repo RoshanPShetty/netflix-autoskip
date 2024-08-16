@@ -4,7 +4,7 @@ import { FaLocationArrow } from "react-icons/fa";
 
 const Download = () => {
 	return (
-		<div className="flex flex-col items-center">
+		<div className="flex flex-col items-center" id="download">
 			<h1 className="text-4xl lg:text-5xl lg:leading-tight max-w-5xl mx-auto text-center tracking-tight font-semibold text-black dark:text-white">
 				Transform Your <span className="text-red-700 font-bold">Netflix</span>{" "}
 				Experience Today!

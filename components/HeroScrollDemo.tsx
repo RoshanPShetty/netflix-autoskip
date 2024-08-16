@@ -6,18 +6,22 @@ import { ContainerScroll } from "./ui/ContainerScroll";
 
 export function HeroScrollDemo() {
 	return (
-		<div className="flex flex-col overflow-hidden">
+		<div className="flex flex-col overflow-hidden" id="about">
 			<ContainerScroll
 				titleComponent={
-					<>
-						<h1 className="text-4xl font-semibold text-black dark:text-white">
-							Unlock Seamless Streaming with
-							<br />
-							<span className="text-4xl md:text-[6rem] font-bold mt-1 leading-none text-red-700">
-								Netflix AutoSkip
-							</span>
-						</h1>
-					</>
+					<div className="items-center flex flex-col">
+						{/* <img src="/logo.png" alt="" className="h-36 " /> */}
+						<>
+							<h1 className="text-4xl font-semibold text-black dark:text-white">
+								Unlock Seamless Streaming with
+								<br />
+								<span className="text-4xl md:text-[6rem] font-bold mt-1 leading-none text-red-700 flex items-center">
+									Netflix AutoSkip{" "}
+									<img src="/logo.png" alt="" className=" h-28 ml-4" />
+								</span>
+							</h1>
+						</>
+					</div>
 				}
 			>
 				<img
@@ -25,7 +29,7 @@ export function HeroScrollDemo() {
 					alt="hero"
 					height={720}
 					width={1400}
-					className="mx-auto rounded-2xl object-cover h-full object-left-top"
+					className="mx-auto rounded-2xl object-fit h-full object-left-top"
 					draggable={false}
 				/>
 			</ContainerScroll>
