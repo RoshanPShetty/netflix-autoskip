@@ -5,7 +5,7 @@ import MagicButton from "./ui/MagicButton";
 
 const Footer = () => {
 	return (
-		<footer className="w-full pb-10" id="contact">
+		<footer className="w-full py-10" id="contact">
 			<div className="flex flex-col items-center">
 				<h1 className="heading lg:max-w-[45vw]">
 					Have a <span className="text-red-700">feature</span> in mind?
