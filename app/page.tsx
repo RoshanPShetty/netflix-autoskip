@@ -10,7 +10,7 @@ import { navItems } from "@/data";
 
 export default function Home() {
 	return (
-		<main className="relative flex justify-center items-center flex-col overflow-clip mx-auto sm:px-10 px-5">
+		<main className="bg-black relative flex justify-center items-center flex-col overflow-clip mx-auto sm:px-10 px-5">
 			<FloatingNav navItems={navItems} />
 			<HeroScrollDemo />
 			<Download />
