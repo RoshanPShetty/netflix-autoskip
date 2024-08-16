@@ -41,11 +41,12 @@ export function FeaturesSectionDemo() {
 		},
 	];
 	return (
-		<div className="relative z-20 py-10 lg:py-40 max-w-7xl mx-auto">
+		<div className="relative z-20 lg:py-40 max-w-7xl mx-auto">
 			<div className="px-8">
-				<h4 className="text-3xl lg:text-5xl lg:leading-tight max-w-5xl mx-auto text-center tracking-tight font-medium text-black dark:text-white">
-					Enhance Your Netflix Experience
-				</h4>
+				<h1 className="text-4xl lg:text-5xl lg:leading-tight max-w-5xl mx-auto text-center tracking-tight font-semibold text-black dark:text-white">
+					Unleash the Power of{" "}
+					<span className="text-red-700 font-bold">Netflix AutoSkip</span>
+				</h1>
 
 				<p className="text-sm lg:text-base  max-w-2xl  my-4 mx-auto text-neutral-500 text-center font-normal dark:text-neutral-300">
 					Discover the powerful features that make Netflix AutoSkip your
@@ -129,7 +130,7 @@ export const SkeletonOne = () => {
 export const SkeletonThree = () => {
 	return (
 		<Link
-			href="https://www.youtube.com/watch?v=RPa3_AD1_Vs"
+			href="/"
 			target="__blank"
 			className="relative flex gap-10  h-full group/image"
 		>
@@ -138,7 +139,7 @@ export const SkeletonThree = () => {
 					{/* TODO */}
 					<IconBrandYoutubeFilled className="h-20 w-20 absolute z-10 inset-0 text-red-500 m-auto " />
 					<img
-						src="https://assets.aceternity.com/fireship.jpg"
+						src="/first.png"
 						alt="header"
 						width={800}
 						height={800}
