@@ -12,11 +12,11 @@ const Download = () => {
 				Transform Your <span className="text-red-700 font-bold">Netflix</span>{" "}
 				Experience Today!
 			</h1>
-			<p className="text-sm lg:text-base  max-w-2xl  mt-4 mx-auto text-neutral-500 text-center font-normal dark:text-neutral-300">
+			<p className="text-sm mb-5 lg:text-base  max-w-2xl  mt-4 mx-auto text-neutral-500 text-center font-normal dark:text-neutral-300">
 				Download AutoSkip on the Chrome Web Store and never miss a beat. Enjoy
 				seamless streaming with just a click!
 			</p>
-			<a href="/">
+			<a href="/" >
 				<MagicButton
 					title="Install Now"
 					icon={<FaChrome />}

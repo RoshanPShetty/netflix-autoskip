@@ -72,8 +72,7 @@ export const FloatingNav = ({
 							"relative dark:text-neutral-50 items-center flex sm:space-x-1 text-neutral-600 dark:hover:text-neutral-300 hover:text-neutral-500"
 						)}
 					>
-						<span className="block sm:hidden">{navItem.icon}</span>
-						<span className="text-lg !cursor-pointer">{navItem.name}</span>
+						<span className="text-sm lg:text-lg !cursor-pointer">{navItem.name}</span>
 					</Link>
 				))}
 			</motion.div>

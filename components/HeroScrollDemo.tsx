@@ -15,9 +15,9 @@ export function HeroScrollDemo() {
 							<h1 className="text-4xl font-semibold text-black dark:text-white">
 								Unlock Seamless Streaming with
 								<br />
-								<span className="text-4xl md:text-[6rem] font-bold mt-1 leading-none text-red-700 flex items-center">
+								<span className="text-4xl md:text-[6rem] font-bold mt-1 leading-none text-red-700 sm:flex sm:items-center">
 									Netflix AutoSkip{" "}
-									<img src="/logo.png" alt="" className=" h-28 ml-4" />
+									<img src="/logo.png" alt="" className=" sm:block hidden h-28 ml-4" />
 								</span>
 							</h1>
 						</>
@@ -29,7 +29,7 @@ export function HeroScrollDemo() {
 					alt="hero"
 					height={720}
 					width={1400}
-					className="mx-auto rounded-2xl object-fit h-full object-left-top"
+					className="mx-auto rounded-2xl object-cover sm:object-fit h-full object-left-top"
 					draggable={false}
 				/>
 			</ContainerScroll>

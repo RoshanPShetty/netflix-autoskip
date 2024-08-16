@@ -5,9 +5,12 @@ import { InfiniteMovingCards } from "./ui/InfiniteMovingCards";
 
 export function InfiniteMovingCardsDemo() {
 	return (
-		<div className="w-full h-[40rem] rounded-md flex flex-col antialiased bg-white dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden" id="reviews">
-			<div className="px-4">
-				<h1 className="text-4xl lg:text-5xl lg:leading-tight max-w-5xl mx-auto text-center tracking-tight font-semibold text-black dark:text-white">
+		<div
+			className="w-full h-[40rem] rounded-md flex flex-col antialiased bg-white dark:bg-black dark:bg-grid-white/[0.05] items-center justify-center relative overflow-hidden"
+			id="reviews"
+		>
+			<div className="px-8 max-w-xl sm:max-w-max">
+				<h1 className="text-4xl text-wrap lg:text-5xl lg:leading-tight max-w-5xl mx-auto text-center tracking-tight font-semibold text-black dark:text-white">
 					Kind words from{" "}
 					<span className="text-red-700 font-bold">our customers</span>
 				</h1>
@@ -61,4 +64,4 @@ const testimonials = [
 			"https://images.unsplash.com/photo-1543949806-2c9935e6aa78?q=80&w=1976&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
 		date: "August 20, 2024",
 	},
-]
+];
