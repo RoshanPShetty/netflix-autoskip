@@ -16,7 +16,7 @@ const Download = () => {
 				Download AutoSkip on the Chrome Web Store and never miss a beat. Enjoy
 				seamless streaming with just a click!
 			</p>
-			<a href="/" >
+			<a href="https://chromewebstore.google.com/detail/netflix-autoskip/ccneeceepbhmgaonnhcbhbmhfomnpnfh">
 				<MagicButton
 					title="Install Now"
 					icon={<FaChrome />}
