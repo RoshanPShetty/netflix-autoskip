@@ -12,11 +12,11 @@ export const InfiniteMovingCards = ({
 	className,
 }: {
 	items: {
-		review: string;
-		reviewer: string;
-		rating: number;
-		avatar: string;
+		profilePic: string;
+		username: string;
+		rating: string;
 		date: string;
+		reviewText: string;
 	}[];
 	direction?: "left" | "right";
 	speed?: "fast" | "normal" | "slow";
@@ -94,7 +94,7 @@ export const InfiniteMovingCards = ({
 						style={{
 							background: "linear-gradient(180deg, #1c1c1c, #000000)", // Adjusted gradient
 						}}
-						key={item.reviewer}
+						key={item.username}
 					>
 						<blockquote>
 							<div
@@ -102,28 +102,30 @@ export const InfiniteMovingCards = ({
 								className="user-select-none -z-1 pointer-events-none absolute -left-0.5 -top-0.5 h-[calc(100%_+_4px)] w-[calc(100%_+_4px)]"
 							></div>
 							<span className=" relative z-20 text-sm leading-[1.6] text-gray-100 font-normal">
-								{item.review}
+								{item.reviewText}
 							</span>
 							<div className="relative z-20 mt-6 flex flex-row items-center">
 								<span className="flex items-center">
 									<div className="me-3">
 										<img
 											className="rounded-full h-12 w-12 items-center justify-center object-cover"
-											src={item.avatar}
+											src={item.profilePic}
 											alt="profile"
 										/>
 									</div>
 									<div className="flex flex-col gap-1">
 										<span className="flex items-center text-xl leading-[1.6] text-white font-bold">
-											{item.reviewer}{" "}
+											{item.username}{" "}
 											<div className="ml-2 flex items-center gap-0.5">
 												{Array.from({ length: 5 }, (_, i) => {
-													if (i < item.rating) {
+													if (i < Number(item.rating[0])) {
 														return (
 															<FaStar
 																key={i}
 																className={` text-yellow-500 ${
-																	i < item.rating ? "opacity-100" : "opacity-50"
+																	i < Number(item.rating[0])
+																		? "opacity-100"
+																		: "opacity-50"
 																}`}
 																size={20}
 															/>
@@ -133,7 +135,9 @@ export const InfiniteMovingCards = ({
 														<FaRegStar
 															key={i}
 															className={` text-yellow-500 ${
-																i < item.rating ? "opacity-100" : "opacity-50"
+																i < Number(item.rating[0])
+																	? "opacity-100"
+																	: "opacity-50"
 															}`}
 															size={20}
 														/>
