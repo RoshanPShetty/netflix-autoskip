@@ -19,7 +19,9 @@ const Download = () => {
 			</p>
 			<a
 				href="https://chromewebstore.google.com/detail/netflix-autoskip/ccneeceepbhmgaonnhcbhbmhfomnpnfh"
-				onClick={() => sendGAEvent("Download", "Chrome Web Store")}
+				onClick={() => sendGAEvent("Download", "Chrome Web Store", {
+					value: "AutoSkip Chrome Download",
+				})}
 			>
 				<MagicButton
 					title="Install Now"
