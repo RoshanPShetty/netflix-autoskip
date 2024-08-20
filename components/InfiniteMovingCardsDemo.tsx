@@ -27,6 +27,15 @@ export function InfiniteMovingCardsDemo() {
 const testimonials = [
 	{
 		profilePic:
+			"https://lh3.googleusercontent.com/a/ACg8ocLLAlrgZivuRKuHphPPPEl5eRSjLBz7U4cvFqkO8VoUb6exEA=s48-w48-h48",
+		username: "Lumina",
+		rating: "5 out of 5 stars",
+		date: "Aug 19, 2024",
+		reviewText:
+			"Fantastic! It skips intros and episodes effortlessly, making binge-watching a breeze. Super easy to use and it just works—love it!",
+	},
+	{
+		profilePic:
 			"https://lh3.googleusercontent.com/a-/ALV-UjWffiHY4nG88Qo4DdzJZOK3zaAYd-VmhtrYFt3Dkk6QLKM_Bes=s48-w48-h48",
 		username: "Anisole Anime2",
 		rating: "5 out of 5 stars",
@@ -40,13 +49,5 @@ const testimonials = [
 		rating: "5 out of 5 stars",
 		date: "Aug 19, 2024",
 		reviewText: "Great Extension! Simple but very effective",
-	},
-	{
-		profilePic:
-			"https://lh3.googleusercontent.com/a-/ALV-UjX9ZoJ3U3koMEzC10adZB8vrfFqh_8DFVUgIuBMr5eHef7eHZDp=s48-w48-h48",
-		username: "Navya s",
-		rating: "5 out of 5 stars",
-		date: "Aug 19, 2024",
-		reviewText: "One of the few extensions that actually works wonders!!",
 	},
 ];
