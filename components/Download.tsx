@@ -1,6 +1,7 @@
 import React from "react";
 import MagicButton from "./ui/MagicButton";
 import { FaChrome, FaLocationArrow } from "react-icons/fa";
+import { sendGAEvent } from "@next/third-parties/google";
 
 const Download = () => {
 	return (
@@ -16,7 +17,10 @@ const Download = () => {
 				Download AutoSkip on the Chrome Web Store and never miss a beat. Enjoy
 				seamless streaming with just a click!
 			</p>
-			<a href="https://chromewebstore.google.com/detail/netflix-autoskip/ccneeceepbhmgaonnhcbhbmhfomnpnfh">
+			<a
+				href="https://chromewebstore.google.com/detail/netflix-autoskip/ccneeceepbhmgaonnhcbhbmhfomnpnfh"
+				onClick={() => sendGAEvent("Download", "Chrome Web Store")}
+			>
 				<MagicButton
 					title="Install Now"
 					icon={<FaChrome />}
