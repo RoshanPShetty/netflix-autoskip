@@ -14,7 +14,7 @@ const calistoga = Calistoga({
 });
 
 export const metadata: Metadata = {
-	title: "Netflix AutoSkuo",
+	title: "Netflix AutoSkip",
 	description:
 		"Enhance your Netflix experience by automatically skipping intros and navigating to the next episode with AutoSkip.",
 };
