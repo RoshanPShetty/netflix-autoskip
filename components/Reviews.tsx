@@ -1,6 +1,7 @@
 import { reviews } from "@/data";
 import Image from "next/image";
 import React from "react";
+import { FaRegStar, FaStar } from "react-icons/fa";
 
 const Reviews = () => {
 	return (
@@ -23,7 +24,7 @@ const Reviews = () => {
 					<div className="flex space-x-8 animate-scroll">
 						{reviews.map((review, idx) => (
 							<div
-								className="w-[90vw] max-w-full relative rounded-2xl border-2 flex-shrink-0 bg-gray-700/30 border-white/10 p-5 md:px-10 py-8 lg:w-[33vw] md:w-[60vw]"
+								className="w-[90vw] max-w-full relative rounded-2xl border-2 flex-shrink-0 border-white/15 bg-white/10 p-5 md:px-10 py-8 lg:w-[33vw] md:w-[60vw]"
 								key={idx}
 							>
 								<div className="flex flex-col">
@@ -36,9 +37,39 @@ const Reviews = () => {
 											className="rounded-full h-16 w-16" // Adjusted size for consistency
 										/>
 										<div className="ml-5 flex flex-col justify-center">
-											<p className="text-lg font-semibold truncate">
-												{review.username}
-											</p>
+											<div className="flex">
+												<p className="text-lg font-semibold truncate">
+													{review.username}
+												</p>
+												<div className="ml-2 flex items-center gap-0.5">
+													{Array.from({ length: 5 }, (_, i) => {
+														if (i < Number(review.rating[0])) {
+															return (
+																<FaStar
+																	key={i}
+																	className={` text-yellow-500 ${
+																		i < Number(review.rating[0])
+																			? "opacity-100"
+																			: "opacity-50"
+																	}`}
+																	size={20}
+																/>
+															);
+														}
+														return (
+															<FaRegStar
+																key={i}
+																className={` text-yellow-500 ${
+																	i < Number(review.rating[0])
+																		? "opacity-100"
+																		: "opacity-50"
+																}`}
+																size={20}
+															/>
+														);
+													})}
+												</div>
+											</div>
 											<p className="text-base truncate text-white/50">
 												{review.date}
 											</p>
