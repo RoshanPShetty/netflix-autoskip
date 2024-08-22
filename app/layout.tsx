@@ -6,7 +6,6 @@ import { GoogleAnalytics } from "@next/third-parties/google";
 import { Analytics } from "@vercel/analytics/react";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
-
 const calistoga = Calistoga({
 	subsets: ["latin"],
 	variable: "--font-serif",
@@ -26,6 +25,12 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en">
+			<head>
+				<meta
+					name="google-site-verification"
+					content="52BZQ_zlFKgiiX5XIaTguFXwxBamg4WoHhMvkWhCkP4"
+				/>
+			</head>
 			<body
 				className={twMerge(
 					inter.variable,
