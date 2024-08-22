@@ -5,7 +5,6 @@ import { twMerge } from "tailwind-merge";
 import { GoogleAnalytics } from "@next/third-parties/google";
 import { Analytics } from "@vercel/analytics/react";
 
-
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
 
 const calistoga = Calistoga({
@@ -34,8 +33,8 @@ export default function RootLayout({
 					"bg-black text-white antialiased font-sans"
 				)}
 			>
-        {children}
-        <Analytics />
+				{children}
+				<Analytics />
 				<GoogleAnalytics gaId="G-7GWQC7WPKN" />
 			</body>
 		</html>

@@ -3,7 +3,13 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import { useState } from "react";
 
-const BounceCard = ({ className, children }) => {
+const BounceCard = ({
+	className,
+	children,
+}: {
+	className: string;
+	children: React.ReactNode;
+}) => {
 	return (
 		<motion.div
 			whileHover={{ scale: 0.95, rotate: "-1deg" }}
@@ -14,13 +20,14 @@ const BounceCard = ({ className, children }) => {
 	);
 };
 
-const CardTitle = ({ children }) => {
+const CardTitle = ({ children }: { children: React.ReactNode }) => {
 	return (
 		<h3 className="font-serif mx-auto text-center text-3xl font-semibold">
 			{children}
 		</h3>
 	);
 };
+
 const Features = () => {
 	const [isSelected, setSelected] = useState(false);
 
