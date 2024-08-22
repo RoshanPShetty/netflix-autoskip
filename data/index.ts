@@ -17,123 +17,22 @@ export const header = [
 	},
 ];
 
-export const logos = [
-	{
-		name: "Svelte",
-		img: "/Svelte.svg",
-	},
-	{
-		name: "ReactJS",
-		img: "/Reactjs.svg",
-	},
-	{
-		name: "TypeScript",
-		img: "/Typescript.svg",
-	},
-	{
-		name: "Node.js",
-		img: "/Nodejs.svg",
-	},
-	{
-		name: "Firebase",
-		img: "/Firebase.svg",
-	},
-	{
-		name: "Netlify",
-		img: "/Netlify.svg",
-	},
-	{
-		name: "MongoDB",
-		img: "/Mongo.svg",
-	},
-	{
-		name: "PostgreSQL",
-		img: "/PostgreSQL.svg",
-	},
-	{
-		name: "Tailwind",
-		img: "/Tailwindcss.svg",
-	},
-	{
-		name: "JavaScript",
-		img: "/JavaScript.svg",
-	},
-	{
-		name: "Postman",
-		img: "/Postman.svg",
-	},
-	{
-		name: "Java",
-		img: "/java.svg",
-	},
-	{
-		name: "Python",
-		img: "/python.svg",
-	},
-	{
-		name: "Swift",
-		img: "/swift.svg",
-	},
-	{
-		name: "Vercel",
-		img: "/Vercel.svg",
-	},
-	{
-		name: "Docker",
-		img: "/Docker.svg",
-	},
-	{
-		name: "GitHub",
-		img: "/git.svg",
-	},
-	{
-		name: "Kubernetes",
-		img: "/Kubernetes.svg",
-	},
-
-	{
-		name: "Next.js",
-		img: "/Nextjs.svg",
-	},
-	{
-		name: "Angular",
-		img: "/Angular.svg",
-	},
-	{
-		name: "Ansible",
-		img: "/Ansible.svg",
-	},
-];
-
-export const interests = [
-	"Anime 📺",
-	"Art 🎨",
-	"Photography 📸",
-	"Travel 🌍",
-	"Basketball 🏀",
-	"Cooking 👨🏻‍🍳",
-	"Hiking 🥾",
-	"Music 🎧",
-];
 
 
 export const socials = [
 	{
 		id: 1,
 		name: "Github",
-		img: "/github.svg",
 		link: "https://github.com/roshanpshetty",
 	},
 	{
 		id: 2,
 		name: "LinkedIn",
-		img: "/linkedin.svg",
 		link: "https://www.linkedin.com/in/roshanpshetty/",
 	},
 	{
 		id: 3,
 		name: "Twitter",
-		img: "/insta.svg",
 		link: "https://x.com/roshanpshetty",
 	},
 ];
