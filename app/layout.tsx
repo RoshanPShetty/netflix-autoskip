@@ -1,14 +1,21 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Calistoga, Inter } from "next/font/google";
 import "./globals.css";
-import Script from "next/script";
-import { Analytics } from "@vercel/analytics/react";
+import { twMerge } from "tailwind-merge";
 import { GoogleAnalytics } from "@next/third-parties/google";
+import { Analytics } from "@vercel/analytics/react";
 
-const inter = Inter({ subsets: ["latin"] });
+
+const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
+
+const calistoga = Calistoga({
+	subsets: ["latin"],
+	variable: "--font-serif",
+	weight: "400",
+});
 
 export const metadata: Metadata = {
-	title: "Netflix AutoSkip",
+	title: "Netflix AutoSkuo",
 	description:
 		"Enhance your Netflix experience by automatically skipping intros and navigating to the next episode with AutoSkip.",
 };
@@ -19,23 +26,16 @@ export default function RootLayout({
 	children: React.ReactNode;
 }>) {
 	return (
-		<html lang="en" className="dark">
-			<head>
-				{/* <Script
-					async
-					src="https://www.googletagmanager.com/gtag/js?id=G-7GWQC7WPKN"
-				></Script>
-				<Script id="google-analytics">
-					{`window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-7GWQC7WPKN');`}
-				</Script> */}
-			</head>
-			<body className={inter.className}>
-				{children}
-				<Analytics />
+		<html lang="en">
+			<body
+				className={twMerge(
+					inter.variable,
+					calistoga.variable,
+					"bg-black text-white antialiased font-sans"
+				)}
+			>
+        {children}
+        <Analytics />
 				<GoogleAnalytics gaId="G-7GWQC7WPKN" />
 			</body>
 		</html>
