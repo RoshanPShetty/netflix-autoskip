@@ -35,7 +35,7 @@ export default function RootLayout({
 			>
 				{children}
 				<Analytics />
-				<GoogleAnalytics gaId="G-7GWQC7WPKN" />
+				<GoogleAnalytics gaId={process.env.TAG_ID as string} />
 			</body>
 		</html>
 	);
