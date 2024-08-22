@@ -1,6 +1,5 @@
 import Image from "next/image";
 import ArrowDown from "../public/arrow-down.svg";
-import grainImage from "../public/grain.jpg";
 
 const Hero = () => {
 	return (
@@ -8,14 +7,14 @@ const Hero = () => {
 			className="py-32 md:py-48 lg:py-60 relative z-10 overflow-x-clip"
 			id="home"
 		>
-			<div className="absolute inset-0 [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_70%,transparent)] z-0">
+			{/* <div className="absolute inset-0 [mask-image:linear-gradient(to_bottom,transparent,black_10%,black_70%,transparent)] z-0">
 				<div
 					className="absolute inset-0 -z-30 opacity-5"
 					style={{
 						backgroundImage: `url(${grainImage.src})`,
 					}}
 				></div>
-			</div>
+			</div> */}
 			<div className="container z-20">
 				<div className="flex flex-col items-center">
 					<Image
