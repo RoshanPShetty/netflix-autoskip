@@ -1,10 +1,13 @@
+import Contact from "@/components/Contact";
 import Header from "@/components/Header";
-import Image from "next/image";
+import Reviews from "@/components/Reviews";
 
 export default function Home() {
 	return (
 		<div>
-			Hello
+			<Header />
+			<Reviews />
+			<Contact />
 		</div>
 	);
 }
