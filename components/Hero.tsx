@@ -39,9 +39,9 @@ const Hero = () => {
 						Effortless Streaming, Anytime
 					</h1>
 					<p className="mt-4 text-center text-white/60 md:text-lg">
-						Transform your Netflix experience with Netflix
-						AutoSkip—automatically skip intros, episodes, and more for
-						uninterrupted, customized viewing pleasure.
+						Transform your Netflix experience with <span className="n-gradient text-transparent bg-clip-text">Netflix AutoSkip</span>{" "}
+						— Automatically skip intros, episodes, and more for uninterrupted,
+						customized viewing pleasure.
 					</p>
 				</div>
 				<div className="flex flex-col md:flex-row justify-center items-center mt-8 gap-4">
