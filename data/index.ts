@@ -35,6 +35,11 @@ export const socials = [
 		name: "Twitter",
 		link: "https://x.com/roshanpshetty",
 	},
+	{
+		id: 4,
+		name: "Privacy",
+		link: "/privacy-policy",
+	},
 ];
 
 export const reviews = [
