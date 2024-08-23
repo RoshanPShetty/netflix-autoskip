@@ -1,5 +1,6 @@
 import Image from "next/image";
 import ArrowDown from "../public/arrow-down.svg";
+import { sendGAEvent } from "@next/third-parties/google";
 
 const Hero = () => {
 	return (
@@ -39,7 +40,10 @@ const Hero = () => {
 						Effortless Streaming, Anytime
 					</h1>
 					<p className="mt-4 text-center text-white/60 md:text-lg">
-						Transform your Netflix experience with <span className="n-gradient text-transparent bg-clip-text">Netflix AutoSkip</span>{" "}
+						Transform your Netflix experience with{" "}
+						<span className="n-gradient text-transparent bg-clip-text">
+							Netflix AutoSkip
+						</span>{" "}
 						— Automatically skip intros, episodes, and more for uninterrupted,
 						customized viewing pleasure.
 					</p>
@@ -49,6 +53,11 @@ const Hero = () => {
 						href="https://chromewebstore.google.com/detail/netflix-autoskip/ccneeceepbhmgaonnhcbhbmhfomnpnfh"
 						target="_blank"
 						className="inline-flex items-center gap-2 n-gradient  px-10 h-12 rounded-xl z-30"
+						onClick={() =>
+							sendGAEvent("file_download", "Click", {
+								value: "chrome_extension",
+							})
+						}
 					>
 						<span className="font-semibold">Install Extension</span>
 						<Image src="/chrome.svg" alt="chrome" width={20} height={20} />
