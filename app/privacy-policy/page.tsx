@@ -133,7 +133,7 @@ const PrivacyPolicy = () => {
 							href="https://x.com/roshanpshetty"
 							target="_blank"
 							className="text-white"
-							onClick={() => track("linkedin_link")}
+
 						>
 							@roshanpshetty
 						</a>
@@ -147,7 +147,6 @@ const PrivacyPolicy = () => {
 										target="_blank"
 										key={social.id}
 										className="ml-4"
-										onClick={() => track(`social_link_${social.name}`)}
 									>
 										{social.name}{" "}
 										<ArrowUpRight className="size-5 inline-flex" />

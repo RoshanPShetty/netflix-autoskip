@@ -21,7 +21,7 @@ const Contact = () => {
 						<a
 							href="mailto:roshanshetty2000@gmail.com"
 							className="bg-black text-white rounded-xl text-lg px-8 py-3 inline-flex items-center gap-4"
-							onClick={() => track("contact_me")}
+
 						>
 							<span>Contact Us</span> <ArrowUpRight className="size-6" />
 						</a>
@@ -37,7 +37,7 @@ const Contact = () => {
 							href="https://x.com/roshanpshetty"
 							target="_blank"
 							className="text-white"
-							onClick={() => track("linkedin_link")}
+
 						>
 							@roshanpshetty
 						</a>
@@ -49,7 +49,7 @@ const Contact = () => {
 								target="_blank"
 								key={social.id}
 								className="ml-4"
-								onClick={() => track(`social_link_${social.name}`)}
+
 							>
 								{social.name} <ArrowUpRight className="size-5 inline-flex" />
 							</a>

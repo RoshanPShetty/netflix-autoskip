@@ -24,7 +24,7 @@ const Reviews = () => {
 					<div className="flex space-x-8 animate-scroll">
 						{reviews.map((review, idx) => (
 							<div
-								className="w-[90vw] max-w-full relative rounded-2xl border-2 flex-shrink-0 border-white/15 bg-white/10 p-5 md:px-10 py-8 lg:w-[33vw] md:w-[60vw]"
+								className="w-[90vw] max-w-full relative rounded-2xl flex-shrink-0 border-white/15 bg-white/10 p-5 md:px-10 py-8 lg:w-[33vw] md:w-[60vw]"
 								key={idx}
 							>
 								<div className="flex flex-col">
