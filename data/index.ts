@@ -17,8 +17,6 @@ export const header = [
 	},
 ];
 
-
-
 export const socials = [
 	{
 		id: 1,
@@ -45,6 +43,15 @@ export const socials = [
 export const reviews = [
 	{
 		profilePic:
+			"https://lh3.googleusercontent.com/a/ACg8ocLLAlrgZivuRKuHphPPPEl5eRSjLBz7U4cvFqkO8VoUb6exEA=s48-w48-h48",
+		username: "Lumina",
+		rating: "5 out of 5 stars",
+		date: "Aug 19, 2024",
+		reviewText:
+			"Fantastic! It skips intros and episodes effortlessly, making binge-watching a breeze. Super easy to use and it just works—love it!",
+	},
+	{
+		profilePic:
 			"https://lh3.googleusercontent.com/a-/ALV-UjX9ZoJ3U3koMEzC10adZB8vrfFqh_8DFVUgIuBMr5eHef7eHZDp=s48-w48-h48",
 		username: "Navya s",
 		rating: "5 out of 5 stars",
@@ -54,12 +61,11 @@ export const reviews = [
 	},
 	{
 		profilePic:
-			"https://lh3.googleusercontent.com/a/ACg8ocLLAlrgZivuRKuHphPPPEl5eRSjLBz7U4cvFqkO8VoUb6exEA=s48-w48-h48",
-		username: "Lumina",
+			"https://lh3.googleusercontent.com/a-/ALV-UjWffiHY4nG88Qo4DdzJZOK3zaAYd-VmhtrYFt3Dkk6QLKM_Bes=s48-w48-h48",
+		username: "Akemi Jin",
 		rating: "5 out of 5 stars",
 		date: "Aug 19, 2024",
-		reviewText:
-			"Fantastic! It skips intros and episodes effortlessly, making binge-watching a breeze. Super easy to use and it just works—love it!",
+		reviewText: "Please create another one for Peacock and Hulu!",
 	},
 	{
 		profilePic:
@@ -72,14 +78,6 @@ export const reviews = [
 	},
 	{
 		profilePic:
-			"https://lh3.googleusercontent.com/a-/ALV-UjWffiHY4nG88Qo4DdzJZOK3zaAYd-VmhtrYFt3Dkk6QLKM_Bes=s48-w48-h48",
-		username: "Akemi Jin",
-		rating: "5 out of 5 stars",
-		date: "Aug 19, 2024",
-		reviewText: "Please create another one for Peacock and Hulu!",
-	},
-	{
-		profilePic:
 			"https://lh3.googleusercontent.com/a-/ALV-UjVYLJpfapRYQVPXxlNvaDez9nqN5zVk4bqI28aLNGUpM8EpERs=s48-w48-h48",
 		username: "Archie Mannu",
 		rating: "5 out of 5 stars",
@@ -87,4 +85,3 @@ export const reviews = [
 		reviewText: "Great Extension! Simple but very effective",
 	},
 ];
-

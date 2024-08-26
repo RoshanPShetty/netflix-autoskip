@@ -6,7 +6,7 @@ import { sendGAEvent } from "@next/third-parties/google";
 const Hero = () => {
 	return (
 		<div
-			className="py-32 md:py-48 lg:py-60 relative z-10 overflow-x-clip"
+			className="py-32 md:py-48 m-h-screen lg:py-60 overflow-x-clip relative inset-0 h-full w-full bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]"
 			id="home"
 		>
 			<div className="container z-20">
