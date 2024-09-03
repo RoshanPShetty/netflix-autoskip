@@ -46,13 +46,24 @@ const Hero = () => {
 						<span className="font-semibold">Install Extension</span>
 						<Image src="/chrome.svg" alt="chrome" width={20} height={20} />
 					</a>
-					<a
+					{/* <a
 						href="#features"
 						className="inline-flex items-center gap-2 border border-white/15 px-10 h-12 rounded-xl z-30"
+					> */}
+					{/* <span className="font-semibold">Learn More</span>
+						<ArrowDown className="size-4" /> */}
+					<a
+						href="https://www.producthunt.com/posts/netflix-autoskip?embed=true&utm_source=badge-featured&utm_medium=badge&utm_souce=badge-netflix&#0045;autoskip"
+						target="_blank"
 					>
-						<span className="font-semibold">Learn More</span>
-						<ArrowDown className="size-4" />
+						<img
+							src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=485989&theme=dark"
+							alt="Netflix&#0032;AutoSkip - Automatically&#0032;skip&#0032;intros&#0032;and&#0032;dive&#0032;into&#0032;the&#0032;next&#0032;episode | Product Hunt"
+							width="250"
+							height="54"
+						/>
 					</a>
+					{/* </a> */}
 				</div>
 			</div>
 		</div>
