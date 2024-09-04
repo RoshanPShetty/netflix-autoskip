@@ -30,6 +30,7 @@ const CardTitle = ({ children }: { children: React.ReactNode }) => {
 
 const Features = () => {
 	const [isSelected, setSelected] = useState(false);
+	const [isSelectedRecap, setSelectedRecap] = useState(false);
 
 	return (
 		<div className="container" id="features">
@@ -54,13 +55,27 @@ const Features = () => {
 							<span className="block text-center font-semibold text-indigo-50 uppercase">
 								Skip intros with one toggle.
 							</span>
-							<div className="flex gap-4 px-5 py-4 items-center justify-between rounded-3xl mt-4">
-								<span className="text-lg text-indigo-50">Skip Intro</span>
+							<div className="flex gap-4 px-5 pt-4 items-center justify-between rounded-3xl">
+								<span className="text-lg text-indigo-50">Skip Intros</span>
 								<div
 									className={`cursor-pointer w-16 h-10 flex items-center bg-gray-300 rounded-full p-1 ${
 										isSelected ? "bg-red-500 justify-end" : "justify-start"
 									}`}
 									onClick={() => setSelected(!isSelected)}
+								>
+									<motion.div
+										layout
+										className="bg-white w-8 h-8 rounded-full shadow-md"
+									></motion.div>
+								</div>
+							</div>
+							<div className="flex gap-4 px-5 pt-4 items-center justify-between rounded-3xl">
+								<span className="text-lg text-indigo-50">Skip Recap</span>
+								<div
+									className={`cursor-pointer w-16 h-10 flex items-start bg-gray-300 rounded-full p-1 ${
+										isSelectedRecap ? "bg-red-500 justify-end" : "justify-start"
+									}`}
+									onClick={() => setSelectedRecap(!isSelectedRecap)}
 								>
 									<motion.div
 										layout
@@ -104,21 +119,38 @@ const Features = () => {
 					</BounceCard>
 
 					<BounceCard className="col-span-12 md:col-span-4 n-gradient">
-						<a href="https://chromewebstore.google.com/detail/netflix-autoskip/ccneeceepbhmgaonnhcbhbmhfomnpnfh" target="_blank">
-							<CardTitle>One-Click Installation</CardTitle>
-							<div className="absolute bottom-0 left-4 right-4 top-32 translate-y-8 rounded-t-2xl bg-black p-4 transition-transform duration-[250ms] group-hover:translate-y-4 group-hover:rotate-[2deg]">
-								<span className="block text-center font-semibold text-red-50 uppercase">
-									Quick setup via Chrome Store.
-								</span>
-								<Image
-									src="/chrome.svg"
-									alt="chrome"
-									width={1920}
-									height={1080}
-									className="mt-4 w-full h-2/3"
-								/>
+						<CardTitle>One-Click Installation</CardTitle>
+						<div className="absolute bottom-0 left-4 right-4 top-32 translate-y-8 rounded-t-2xl bg-black p-4 transition-transform duration-[250ms] group-hover:translate-y-4 group-hover:rotate-[2deg]">
+							<span className="block text-center font-semibold text-red-50 uppercase">
+								Quick setup via Chrome/Firefox.
+							</span>
+							<div className="flex gap-8 items-center justify-center">
+								<a
+									href="https://chromewebstore.google.com/detail/netflix-autoskip/ccneeceepbhmgaonnhcbhbmhfomnpnfh"
+									target="_blank"
+								>
+									<Image
+										src="/chrome.svg"
+										alt="chrome"
+										width={1920}
+										height={1080}
+										className="mt-4 size-28"
+									/>
+								</a>
+								<a
+									href="https://addons.mozilla.org/en-US/firefox/addon/netflix-autoskip/"
+									target="_blank"
+								>
+									<Image
+										src="/firefox.svg"
+										alt="firefox"
+										width={1920}
+										height={1080}
+										className="mt-4 size-28"
+									/>
+								</a>
 							</div>
-						</a>
+						</div>
 					</BounceCard>
 				</div>
 			</section>
